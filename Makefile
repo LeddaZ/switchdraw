@@ -46,6 +46,7 @@ INCLUDES	:=	include
 
 APP_TITLE	:=	switchdraw
 APP_AUTHOR	:=	LeddaZ
+APP_VERSION :=  1.0.1
 
 #---------------------------------------------------------------------------------
 # options for code generation
