@@ -57,21 +57,64 @@ int main(int argc, char **argv) {
     printf(CONSOLE_ESC(2J));
 
     // Draw
-    draw(2, 0); draw(2, 3); draw(4, 0); draw(2, 3);
-    printf("\n");
-    draw(1, 0); draw(1, 3); draw(2, 6); draw(1, 3); draw(2, 0); draw(1, 3); draw(2, 6); draw(1, 3);
-
-    for(int i = 0; i < 2; i++) {
+    for(int i = 0; i < 4; i++) {
+        for(int i = 0; i < 4; i++) {
+            draw(2, 0); draw(2, 3); draw(4, 0); draw(2, 3); draw(4, 0);
+        }
+        draw(2, 0); draw(2, 3); draw(4, 0); draw(2, 3);
         printf("\n");
-        draw(1, 0); draw(1, 3); draw(1, 6); draw(1, 0); draw(1, 3); draw(2, 0); draw(1, 3); draw(1, 6); draw(1, 0); draw(1, 3);
-    }
 
-    printf("\n"); draw(1, 0); draw(10, 3);
-    printf("\n"); draw(4, 3); draw(1, 0); draw(2, 3); draw(1, 0); draw(4, 3);
-    printf("\n"); draw(12, 3);
-    printf("\n"); draw(2, 3); draw(1, 0); draw(6, 3); draw(1, 0); draw(2, 3);
-    printf("\n"); draw(3, 3); draw(6, 0); draw(3, 3);
-    printf("\n"); draw(1, 0); draw(10, 3);
+        for(int i = 0; i < 4; i++) {
+            draw(1, 0); draw(1, 3); draw(2, 6); draw(1, 3); draw(2, 0); draw(1, 3); draw(2, 6); draw(1, 3); draw(3, 0);
+        }
+        draw(1, 0); draw(1, 3); draw(2, 6); draw(1, 3); draw(2, 0); draw(1, 3); draw(2, 6); draw(1, 3);
+
+        printf("\n");
+        for(int i = 0; i < 2; i++) {
+            for(int j = 0; j < 4; j++) {
+                draw(1, 0); draw(1, 3); draw(1, 6); draw(1, 0); draw(1, 3); draw(2, 0); draw(1, 3); draw(1, 6); draw(1, 0); draw(1, 3); draw(3, 0);
+            }
+            draw(1, 0); draw(1, 3); draw(1, 6); draw(1, 0); draw(1, 3); draw(2, 0); draw(1, 3); draw(1, 6); draw(1, 0); draw(1, 3);
+            printf("\n");
+        }
+        
+        for(int i = 0; i < 4; i++) {
+            draw(1, 0); draw(10, 3); draw(3, 0);
+        }
+        draw(1, 0); draw(10, 3);
+        
+        printf("\n");
+        for(int i = 0; i < 4; i++) {
+            draw(4, 3); draw(1, 0); draw(2, 3); draw(1, 0); draw(4, 3); draw(2, 0);
+        }
+        draw(4, 3); draw(1, 0); draw(2, 3); draw(1, 0); draw(4, 3);
+
+        printf("\n");
+        for(int i = 0; i < 4; i++) {
+            draw(12, 3); draw(2, 0);
+        }
+        draw(12, 3);
+
+        printf("\n");
+        for(int i = 0; i < 4; i++) {
+            draw(2, 3); draw(1, 0); draw(6, 3); draw(1, 0); draw(2, 3); draw(2, 0);
+        }
+        draw(2, 3); draw(1, 0); draw(6, 3); draw(1, 0); draw(2, 3);
+
+        printf("\n");
+        for(int i = 0; i < 4; i++) {
+            draw(3, 3); draw(6, 0); draw(3, 3); draw(2, 0);
+        }
+        draw(3, 3); draw(6, 0); draw(3, 3);
+
+        printf("\n");
+        for(int i = 0; i < 4; i++) {
+            draw(1, 0); draw(10, 3); draw(3, 0);
+        }
+        draw(1, 0); draw(10, 3);
+
+        printf("\n\n");
+    }
 
     // Main loop
     while(appletMainLoop()) {
