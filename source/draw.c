@@ -7,6 +7,10 @@
 
 #include <switch.h>
 
+/* Draw a line of pixels on the screen
+ * n: Number of pixels
+ * color: Color of the pixels
+ */
 void draw(int n, int color) {
     switch (color) {
 		case 0: 
