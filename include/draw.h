@@ -1,0 +1,18 @@
+// Backgorund colors
+#define BG_BLUE     CONSOLE_ESC(34;7m)
+#define BG_CYAN     CONSOLE_ESC(36;7m)
+#define BG_GREEN    CONSOLE_ESC(32;7m)
+#define BG_MAGENTA  CONSOLE_ESC(35;7m)
+#define BG_RED      CONSOLE_ESC(31;7m)
+#define BG_WHITE    CONSOLE_ESC(37;7m)
+#define BG_YELLOW   CONSOLE_ESC(33;7m)
+
+// Colors for draw()
+#define BLACK    CONSOLE_RESET
+#define BLUE     BG_BLUE CONSOLE_BLUE
+#define CYAN     BG_CYAN CONSOLE_CYAN
+#define GREEN    BG_GREEN CONSOLE_GREEN
+#define MAGENTA  BG_MAGENTA CONSOLE_MAGENTA
+#define RED      BG_RED CONSOLE_RED
+#define WHITE    BG_WHITE CONSOLE_WHITE
+#define YELLOW   BG_YELLOW CONSOLE_YELLOW
